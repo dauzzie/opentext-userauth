@@ -42,7 +42,6 @@ class Menu:
         while True:
             self.stdscr.clear()
             self.update_menu()
-            print(self.curr_menu)
             self.print_menu(curr_idx)
             key = self.stdscr.getch()
 
