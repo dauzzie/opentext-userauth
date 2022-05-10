@@ -5,8 +5,8 @@ A user authentication program using Keyring as credentials mechanic. More info o
 Installations:
 
 1. Clone this repository
-2. Make sure using Python version `3.9.10`
-3. Run `pip install requirements.txt`
+2. Make sure using Python version `3.9.10` or later
+3. Run `pip install -r requirements.txt`
 4. Run `python3 main.py`
 
 Information:
