@@ -239,7 +239,7 @@ class Menu:
         y, x = self.center_pos
         while True:
             self.stdscr.clear()
-            self.stdscr.addstr(y, x, "Username: ")
+            self.stdscr.addstr(*self.center_pos, "Username: ")
             _, x = self.stdscr.getyx()
             username, errors = (self.text_input(y, x+1, True, False))
             self.stdscr.refresh()
@@ -279,7 +279,7 @@ class Menu:
         while True:
             y, x = self.center_pos
             self.stdscr.clear()
-            self.stdscr.addstr(y, x, "Username: ")
+            self.stdscr.addstr(*self.center_pos, "Username: ")
             _, x = self.stdscr.getyx()
             username, errors = self.text_input(y, x+1, False, False)
             self.stdscr.refresh()
